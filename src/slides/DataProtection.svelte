@@ -1,3 +1,3 @@
 <section>
-  <h1>Data Protection</h1>
+  <p></p>
 </section>
