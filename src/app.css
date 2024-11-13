@@ -1,0 +1,26 @@
+body {
+  --r-heading-color: rgb(255, 204, 244);
+  /* --r-heading-color: rgba(186, 225, 255, 1); */
+  --r-background-color: rgb(46, 52, 64);
+  /* --r-main-color: rgb(255, 204, 244); */
+  --r-main-color: rgb(255, 255, 255);
+
+  --r-border-radius: 5px;
+  --r-highlight-color: rgba(186, 225, 255, 1);
+
+  .reveal {
+    .controls-arrow,
+    .progress {
+      color: var(--r-heading-color);
+    }
+
+    code.hljs {
+      border-radius: var(--r-border-radius);
+      padding: 1rem;
+    }
+
+    i {
+      color: var(--r-highlight-color);
+    }
+  }
+}

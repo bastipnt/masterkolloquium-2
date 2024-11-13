@@ -1,13 +1,15 @@
 <script lang="ts">
+  import Title from "./slides/Title.svelte";
+  import Project from "./slides/Project.svelte";
   import BrowserFingerprint from "./slides/BrowserFingerprint.svelte";
   import BrowserMusic from "./slides/BrowserMusic.svelte";
-  import DataProtection from "./slides/DataProtection.svelte";
-  import Project from "./slides/Project.svelte";
-  import Title from "./slides/Title.svelte";
+  import BfExample1 from "./slides/BFExample1.svelte";
 </script>
 
 <Title />
-<DataProtection />
-<BrowserFingerprint />
 <Project />
+
+<BrowserFingerprint />
+<BfExample1 />
+
 <BrowserMusic />
