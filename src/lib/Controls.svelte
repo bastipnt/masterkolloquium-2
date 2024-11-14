@@ -15,13 +15,14 @@
 
   const handleStartStop = () => {
     if (!playbackContext.initialized) return;
+    const currentId = slideState.currentSlide?.id as Sounds;
+    if (!currentId) return;
 
-    if (slideState.currentSlide?.id === Sounds.Example1) {
-      playbackContext.tonejsWrapper?.toggleStartStop(Sounds.Example1);
+    if (Object.values(Sounds).includes(currentId)) {
+      playbackContext.tonejsWrapper?.toggleStartStop(currentId);
       playbackContext.playing = !playbackContext.playing;
     } else {
-      if (!playbackContext.playing) return;
-      playbackContext.tonejsWrapper?.stop();
+      playbackContext.tonejsWrapper?.toggleStartStop();
       playbackContext.playing = !playbackContext.playing;
     }
   };

@@ -1,7 +1,8 @@
-import { Channel, getDestination, start } from "tone";
+import { Channel, getDestination, getTransport, start } from "tone";
 import type BaseSound from "./BaseSound";
 import OSCExample1 from "./OSCExample1";
 import { Sounds } from "./types.d";
+import Example2 from "./Example2";
 
 class TonejsWrapper {
   static initialized = false;
@@ -13,6 +14,7 @@ class TonejsWrapper {
   constructor() {
     this.channel.connect(getDestination());
     this.sounds.set(Sounds.Example1, new OSCExample1(this.channel));
+    this.sounds.set(Sounds.Example2, new Example2(this.channel));
   }
 
   toggleStartStop(sound?: Sounds) {
@@ -24,20 +26,24 @@ class TonejsWrapper {
     }
   }
 
-  start(sound: Sounds) {
-    const toBePlayed = this.sounds.get(sound);
-    if (!toBePlayed) return;
+  start(sound?: Sounds) {
+    getTransport().start();
 
-    toBePlayed.start();
+    if (sound) {
+      this.sounds.get(sound)?.start();
+    } else {
+      this.sounds.forEach((sound) => sound.start());
+    }
+
     this.playing = true;
   }
 
   startAll() {
-    this.sounds.forEach((sound) => sound.start());
     this.playing = true;
   }
 
   stop() {
+    getTransport().stop();
     this.sounds.forEach((sound) => sound.stop());
     this.playing = false;
   }
