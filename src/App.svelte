@@ -2,15 +2,53 @@
   import Reveal from "reveal.js";
   import { onMount, tick } from "svelte";
   import Presentation from "./Presentation.svelte";
+  import { setSlideContext, type SlideState } from "./context/SlideContext";
+  import {
+    defaultPlaybackContext,
+    setPlaybackContext,
+    type PlaybackContext,
+  } from "./context/PlaybackContext";
+  import Controls from "./lib/Controls.svelte";
 
-  export let app;
-  export let reveal;
+  type Props = {
+    app: any;
+    reveal: any;
+  };
+
+  let { app, reveal }: Props = $props();
+
+  let deck = $state<Reveal.Api>();
+
+  const slideState = $state<SlideState>({
+    currentSlide: null,
+    fragmentShown: null,
+    fragmentHidden: null,
+  });
+  setSlideContext(slideState);
+
+  const playbackContext = $state<PlaybackContext>(defaultPlaybackContext);
+  setPlaybackContext(playbackContext);
 
   onMount(async () => {
     await tick();
     console.log("finish");
-    const deck = new Reveal(reveal);
+    deck = new Reveal(reveal);
     deck.initialize();
+
+    deck.on("slidechanged", (e) => {
+      // @ts-ignore
+      slideState.currentSlide = e.currentSlide;
+    });
+
+    deck.on("fragmentshown", (e) => {
+      // @ts-ignore
+      slideState.fragmentShown = e.fragment;
+    });
+
+    deck.on("fragmenthidden", (e) => {
+      // @ts-ignore
+      slideState.fragmentHidden = e.fragment;
+    });
   });
 </script>
 
@@ -21,3 +59,4 @@
 <div class="slides">
   <Presentation />
 </div>
+<Controls />

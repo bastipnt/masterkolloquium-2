@@ -1,5 +1,9 @@
 <section>
-  <section>
+  <section
+    data-background-image="/fingerprint.svg"
+    data-background-size="90vh"
+    data-background-opacity="0.2"
+  >
     <p class="fragment fade-in-then-semi-out">
       You get ads that are really accurate?
     </p>
