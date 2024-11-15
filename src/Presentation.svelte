@@ -3,13 +3,11 @@
   import Project from "./slides/Project.svelte";
   import BrowserFingerprint from "./slides/BrowserFingerprint.svelte";
   import BrowserMusic from "./slides/BrowserMusic.svelte";
-  import BfExample1 from "./slides/BFExample1.svelte";
+  import Conclusion from "./slides/Conclusion.svelte";
 </script>
 
 <Title />
 <Project />
-
 <BrowserFingerprint />
-<BfExample1 />
-
 <BrowserMusic />
+<Conclusion />

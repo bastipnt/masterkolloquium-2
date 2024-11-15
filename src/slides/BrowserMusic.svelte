@@ -13,7 +13,7 @@
     </ul>
 
     <aside class="notes">
-      - available since April 2021 across mayor browsers (MDN)
+      <p>available since April 2021 across mayor browsers (MDN)</p>
     </aside>
   </section>
 
@@ -22,10 +22,7 @@
     <div>
       <p>Simple Oscillator:</p>
       <pre class="fragment">
-        <code
-          data-trim
-          data-line-numbers="1|3-5|7-9|11|1-11"
-          class="language-ts">
+        <code data-trim data-line-numbers="1|3-5|7-9|11|1-11" class="language-ts">
           {`
             const audioContext = new AudioContext();
 
@@ -49,10 +46,7 @@
     <div>
       <p>Synth with a pattern (tone.js):</p>
       <pre class="fragment">
-        <code
-          data-trim
-          data-line-numbers="1|3-5|7-8|10-11|1-11"
-          class="language-ts">
+        <code data-trim data-line-numbers="1|3-5|7-8|10-11|1-11" class="language-ts">
           {`
             const synth = new PolySynth();
 
@@ -74,10 +68,7 @@
   <section id={Sounds.Example3}>
     <h4>Example #3:</h4>
     <pre class="fragment">
-      <code
-        data-trim
-        data-line-numbers="1-5|7-10|12-15|17-20"
-        class="language-ts">
+      <code data-trim data-line-numbers="1-5|7-10|12-15|17-20" class="language-ts">
         {`
           const grain = new GrainPlayer("/coffee-sound.mp3", ...)
             .toDestination();
@@ -104,3 +95,5 @@
     </pre>
   </section>
 </section>
+
+<!-- TODO: add section with tonejs??? -->

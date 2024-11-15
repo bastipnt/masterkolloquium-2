@@ -1,3 +1,0 @@
-<section>
-  <p></p>
-</section>
