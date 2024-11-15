@@ -3,6 +3,7 @@ import type BaseSound from "./BaseSound";
 import OSCExample1 from "./OSCExample1";
 import { Sounds } from "./types.d";
 import Example2 from "./Example2";
+import Example3 from "./Example3";
 
 class TonejsWrapper {
   static initialized = false;
@@ -15,6 +16,7 @@ class TonejsWrapper {
     this.channel.connect(getDestination());
     this.sounds.set(Sounds.Example1, new OSCExample1(this.channel));
     this.sounds.set(Sounds.Example2, new Example2(this.channel));
+    this.sounds.set(Sounds.Example3, new Example3());
   }
 
   toggleStartStop(sound?: Sounds) {

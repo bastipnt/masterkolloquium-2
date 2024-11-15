@@ -70,4 +70,37 @@
       </pre>
     </div>
   </section>
+
+  <section id={Sounds.Example3}>
+    <h4>Example #3:</h4>
+    <pre class="fragment">
+      <code
+        data-trim
+        data-line-numbers="1-5|7-10|12-15|17-20"
+        class="language-ts">
+        {`
+          const grain = new GrainPlayer("/coffee-sound.mp3", ...)
+            .toDestination();
+          const loop = new Loop(() => {
+            grain.set({ playbackRate: Math.random() + 0.5 });
+          }, "4n");
+
+          const bell = new MetalSynth(...).toDestination();
+          const bellSequence = new Sequence((time, note) => {
+            bell.traiggerAttack(note, time);
+          }, [...], "4n");
+
+          const drum = new MembraneSynth(...).toDestination();
+          const drumSequence = new Sequence((time, note) => {
+            drum.triggerAttack(note, time);
+          }, ["G3", "C4", "C4", "C4"], "4n");
+
+          loop.start();
+          grain.start();
+          bellSequence.start();
+          drumSequence.start();
+        `}
+      </code>
+    </pre>
+  </section>
 </section>
