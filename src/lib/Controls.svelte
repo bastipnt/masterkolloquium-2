@@ -3,38 +3,49 @@
   import { getSlideContext } from "../context/SlideContext";
   import { Sounds } from "../TonejsWrapper/types.d";
 
+  type Props = {
+    canvasEl?: HTMLCanvasElement;
+  };
+
+  let { canvasEl }: Props = $props();
+
   const playbackContext = getPlaybackContext();
   const slideState = getSlideContext();
+
+  const inIframe = window.self !== window.top;
+
+  let currentSoundId = $derived.by(() => {
+    const id = slideState.currentSlide?.id as Sounds;
+
+    if (Object.values(Sounds).includes(id)) return id;
+    return undefined;
+  });
 
   const handleInitAudioContext = async () => {
     const TonejsWrapper = (await import("../TonejsWrapper")).default;
     await TonejsWrapper.init();
-    playbackContext.tonejsWrapper = new TonejsWrapper();
+    playbackContext.tonejsWrapper = new TonejsWrapper(canvasEl);
     playbackContext.initialized = true;
   };
 
   const handleStartStop = () => {
     if (!playbackContext.initialized) return;
-    const currentId = slideState.currentSlide?.id as Sounds;
-    if (!currentId) return;
+    if (!currentSoundId) return;
 
-    if (Object.values(Sounds).includes(currentId)) {
-      playbackContext.tonejsWrapper?.toggleStartStop(currentId);
-      playbackContext.playing = !playbackContext.playing;
-    } else {
-      playbackContext.tonejsWrapper?.toggleStartStop();
-      playbackContext.playing = !playbackContext.playing;
-    }
+    playbackContext.tonejsWrapper?.toggleStartStop(currentSoundId);
+    playbackContext.playing = !playbackContext.playing;
   };
 </script>
 
 <div class="audio-controls">
-  {#if !playbackContext.initialized}
-    <button onclick={handleInitAudioContext}>Init Audio Context</button>
-  {:else}
-    <button onclick={handleStartStop}>
-      {#if playbackContext.playing}Stop{:else}Start{/if}
-    </button>
+  {#if !inIframe && currentSoundId !== undefined}
+    {#if !playbackContext.initialized}
+      <button onclick={handleInitAudioContext}>Init Audio Context</button>
+    {:else}
+      <button onclick={handleStartStop}>
+        {#if playbackContext.playing}Stop{:else}Start{/if}
+      </button>
+    {/if}
   {/if}
 </div>
 

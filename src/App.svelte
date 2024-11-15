@@ -9,6 +9,7 @@
     type PlaybackContext,
   } from "./context/PlaybackContext";
   import Controls from "./lib/Controls.svelte";
+  import CanvasBg from "./lib/CanvasBG.svelte";
 
   type Props = {
     app: any;
@@ -16,6 +17,7 @@
   };
 
   let { app, reveal }: Props = $props();
+  let canvasEL = $state<HTMLCanvasElement>();
 
   let deck = $state<Reveal.Api>();
 
@@ -59,4 +61,5 @@
 <div class="slides">
   <Presentation />
 </div>
-<Controls />
+<Controls canvasEl={canvasEL} />
+<CanvasBg bind:canvasEl={canvasEL} />

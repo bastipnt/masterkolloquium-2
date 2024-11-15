@@ -58,7 +58,7 @@
             tremolo = new Tremolo(9, 0.75).start();
 
             synth.chain(tremolo, pingPong);
-            seq.start(0);
+            seq.start();
           `}
         </code>
       </pre>

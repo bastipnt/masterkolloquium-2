@@ -1,29 +1,23 @@
 import {
-  AmplitudeEnvelope,
   Gain,
   GrainPlayer,
   Loop,
   MembraneSynth,
   MetalSynth,
-  Offline,
-  Oscillator,
   PingPongDelay,
   Sequence,
   ToneAudioBuffer,
   Tremolo,
+  Channel,
 } from "tone";
 
-import type BaseSound from "./BaseSound";
+import BaseSound from "./BaseSound";
 import coffeSample from "../assets/samples/coffee_1.mp3";
+import type { Time } from "tone/build/esm/core/type/Units";
 
-class Example3 implements BaseSound {
+class Example3 extends BaseSound {
   private initialized = false;
   private grain?: GrainPlayer;
-
-  private adsr = new AmplitudeEnvelope({
-    attack: 0.2,
-    release: 0.8,
-  }).toDestination();
 
   private loop?: Loop;
 
@@ -47,7 +41,7 @@ class Example3 implements BaseSound {
       [200, null, 200],
     ],
     "4n"
-  );
+  ).start(0);
 
   private congo = new MembraneSynth({
     pitchDecay: 0.008,
@@ -62,13 +56,14 @@ class Example3 implements BaseSound {
     },
     ["G3", "C4", "C4", "C4"],
     "4n"
-  );
+  ).start(0);
 
-  private pingPong = new PingPongDelay("16n", 0.2).connect(this.adsr);
-  private tremolo = new Tremolo(9, 0.75).start();
+  private pingPong = new PingPongDelay("16n", 0.2).connect(this.channel);
+  private tremolo = new Tremolo(9, 0.75).connect(this.channel).start(0);
 
-  constructor() {
-    this.bell.chain(this.tremolo, this.pingPong);
+  constructor(channel: Channel) {
+    super(channel);
+    this.bell.chain(this.tremolo);
     this.congo.chain(this.pingPong);
 
     this.init();
@@ -88,52 +83,31 @@ class Example3 implements BaseSound {
       playbackRate: 0.1,
       loopStart: 0,
       loopEnd: abDuration,
-    }).chain(grainGain, this.tremolo, this.adsr);
+    }).chain(grainGain, this.tremolo);
 
     this.loop = new Loop(() => {
       if (!this.grain) return;
       this.grain.set({ playbackRate: Math.random() + 0.5 });
-    }, "4n");
+    }, "4n").start(0);
 
     this.initialized = true;
     console.log("grain initialized");
   }
 
-  start(time = 0) {
+  start(time?: Time) {
     if (!this.initialized) return;
-    this.loop?.start(time);
     this.grain?.start(time);
-
-    this.bellSequence.start(time);
-    this.congoSequence.start(time);
-
-    this.adsr.triggerAttack(time);
   }
 
-  stop(time = "+1") {
-    this.adsr.triggerRelease();
-
+  stop(time: Time) {
+    if (!this.initialized) return;
     this.grain?.stop(time);
-    this.loop?.stop(time);
-    this.bellSequence.stop(time);
-    this.congoSequence.stop(time);
   }
 
   private loadAudioBuffer = (): Promise<ToneAudioBuffer> =>
     new Promise((resolve) => {
       new ToneAudioBuffer(coffeSample, (buffer) => resolve(buffer));
     });
-
-  private async getAudioBuffer(): Promise<ToneAudioBuffer> {
-    return await Offline(
-      () => {
-        new Oscillator({ frequency: 260 }).toDestination().start(0);
-      },
-      0.5,
-      1,
-      44100
-    );
-  }
 }
 
 export default Example3;

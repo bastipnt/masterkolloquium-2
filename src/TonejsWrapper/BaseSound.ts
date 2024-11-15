@@ -1,6 +1,15 @@
+import type { AmplitudeEnvelope, Channel } from "tone";
+import type { Time } from "tone/build/esm/core/type/Units";
+
 abstract class BaseSound {
-  abstract start(): void;
-  abstract stop(): void;
+  channel: Channel;
+
+  constructor(channel: Channel) {
+    this.channel = channel;
+  }
+
+  abstract start(time?: Time): void;
+  abstract stop(time: Time): void;
 }
 
 export default BaseSound;

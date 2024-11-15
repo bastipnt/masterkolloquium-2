@@ -1,28 +1,27 @@
-import { Channel, PingPongDelay, PolySynth, Sequence, Tremolo } from "tone";
-import type BaseSound from "./BaseSound";
+import { AmplitudeEnvelope, Channel, PingPongDelay, PolySynth, Sequence, Tremolo } from "tone";
+import BaseSound from "./BaseSound";
+import type { Time } from "tone/build/esm/core/type/Units";
 
-class Example2 implements BaseSound {
+class Example2 extends BaseSound {
   synth = new PolySynth({ options: { detune: 20, portamento: 2 } });
   seq = new Sequence(
     (time, note) => {
       this.synth.triggerAttackRelease(note, 0.1, time);
     },
     ["C4", ["E3", "D5", "E4"], "G3", ["A4", "G5"]]
-  );
-  pingPong = new PingPongDelay("16n", 0.2).toDestination();
-  tremolo = new Tremolo(9, 0.75).start();
+  ).start(0);
+
+  pingPong = new PingPongDelay("16n", 0.2).connect(this.channel);
+  tremolo = new Tremolo(9, 0.75).start(0);
 
   constructor(channel: Channel) {
+    super(channel);
     this.synth.chain(this.tremolo, this.pingPong);
   }
 
-  start() {
-    this.seq.start(0);
-  }
+  start() {}
 
-  stop() {
-    this.seq.stop();
-  }
+  stop() {}
 }
 
 export default Example2;
