@@ -33,10 +33,19 @@
   </section>
 
   <section>
-    <h1>Overview of trackers</h1>
+    <h4>Overview of trackers</h4>
+    <ul>
+      <li>Google</li>
+      <li>Facebook</li>
+      <li>AddThis</li>
+      <li>Twitter</li>
+      <li>StatCounter</li>
+      <li>Automattic</li>
+      <li>...</li>
+    </ul>
 
     <aside class="notes">
-      <p>TODO: add trackers</p>
+      <p>Top trackers according to a study (2016)</p>
     </aside>
   </section>
 
