@@ -13,8 +13,11 @@
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
     "@tsconfig/svelte": "^5.0.4",
     "@types/reveal.js": "^5.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
     "svelte": "^5.1.16",
     "svelte-check": "^4.0.7",
+    "tailwindcss": "^3.4.15",
     "tslib": "^2.8.1",
     "typescript": "~5.6.3",
     "vite": "^5.4.11"

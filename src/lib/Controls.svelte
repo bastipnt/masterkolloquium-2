@@ -49,7 +49,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   .audio-controls {
     position: fixed;
     bottom: 0;

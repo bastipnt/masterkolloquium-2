@@ -41,8 +41,10 @@ class SignalVisualisation {
 
   private draw(values: Float32Array) {
     if (this.ctx === null) return;
-
     this.ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
+
+    const startIndex = values.findIndex((value, i, arr) => value >= 0 && arr[i - 1] < 0);
+    const endIndex = startIndex + values.length / 2;
 
     const max = this.normalizeCurve ? Math.max(0.001, ...values) * 1.1 : 1;
     const min = this.normalizeCurve ? Math.min(-0.001, ...values) * 1.1 : 0;
@@ -50,15 +52,12 @@ class SignalVisualisation {
     const lineWidth = 3;
     this.ctx.lineWidth = lineWidth;
     this.ctx.beginPath();
-    for (let i = 0; i < values.length; i++) {
+    for (let i = startIndex; i < endIndex; i++) {
       const amplitude = values[i];
-      const x = this.scale(i, 0, values.length, lineWidth, this.canvasWidth - lineWidth);
+      const x = this.scale(i, startIndex, endIndex, -lineWidth, this.canvasWidth + lineWidth);
       const y = this.scale(amplitude, max, min, 0, this.canvasHeight - lineWidth);
-      if (i === 0) {
-        // this.ctx.moveTo(x, y);
-      } else {
-        this.ctx.lineTo(x, y);
-      }
+
+      this.ctx.lineTo(x, y);
     }
     this.ctx.lineCap = "round";
     this.ctx.strokeStyle = "white";

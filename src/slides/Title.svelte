@@ -33,16 +33,18 @@
   </section>
 
   <section>
-    <h4>Overview of trackers</h4>
-    <ul>
-      <li>Google</li>
-      <li>Facebook</li>
-      <li>AddThis</li>
-      <li>Twitter</li>
-      <li>StatCounter</li>
-      <li>Automattic</li>
-      <li>...</li>
-    </ul>
+    <div class="flex flex-col">
+      <h4>Overview of trackers</h4>
+      <ul>
+        <li>Google</li>
+        <li>Facebook</li>
+        <li>AddThis</li>
+        <li>Twitter</li>
+        <li>StatCounter</li>
+        <li>Automattic</li>
+        <li>...</li>
+      </ul>
+    </div>
 
     <aside class="notes">
       <p>Top trackers according to a study (2016)</p>

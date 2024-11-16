@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   --r-heading-color: rgb(255, 204, 244);
   /* --r-heading-color: rgba(186, 225, 255, 1); */

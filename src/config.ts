@@ -31,5 +31,6 @@ export default {
     navigationMode: "linear",
     controls: false,
     progress: false,
+    disableLayout: false,
   } as Reveal.Options,
 };
