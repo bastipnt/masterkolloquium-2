@@ -132,8 +132,7 @@
   </section>
 
   <section>
-    <h4>
-      Data Protection:<br />How does your digital fingerprint sound
-    </h4>
+    <h1 class="r-fit-text">Data Protection:</h1>
+    <h2 class="r-fit-text">How does your digital fingerprint sound</h2>
   </section>
 </section>

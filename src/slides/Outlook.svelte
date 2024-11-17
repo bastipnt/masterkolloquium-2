@@ -1,5 +1,5 @@
 <section>
-  <h1>Outlook</h1>
+  <h1 class="r-fit-text">Outlook</h1>
 
   <ul>
     <li>Deeper investigation of the Browser Fingerprint</li>

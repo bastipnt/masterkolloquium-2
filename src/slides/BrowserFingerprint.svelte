@@ -1,6 +1,10 @@
 <section>
-  <section>
-    <h4>Browser Fingerprint:</h4>
+  <section
+    data-background-image="/fingerprint.svg"
+    data-background-size="90vh"
+    data-background-opacity="0.2"
+  >
+    <h1 class="r-fit-text">Browser Fingerprint</h1>
     <ul>
       <li>Collection of all/some/relevant feature information from the browser</li>
       <li>Super sneaky</li>
