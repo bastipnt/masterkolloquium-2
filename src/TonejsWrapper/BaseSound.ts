@@ -1,4 +1,4 @@
-import type { AmplitudeEnvelope, Channel } from "tone";
+import type { Channel } from "tone";
 import type { Time } from "tone/build/esm/core/type/Units";
 
 abstract class BaseSound {

@@ -20,6 +20,7 @@ class Example3 extends BaseSound {
   private grain?: GrainPlayer;
 
   private loop?: Loop;
+  private bar = 0;
 
   private bell = new MetalSynth({
     harmonicity: 12,
@@ -50,11 +51,13 @@ class Example3 extends BaseSound {
   });
   private congoSequence = new Sequence(
     (time, note) => {
+      this.bar += 1;
       if (note === null) return;
       // if (Math.random() < 0.3) return;
+      if (this.bar % 8 === 0) return;
       this.congo.triggerAttack(note, time, Math.random() * 0.5 + 0.5);
     },
-    ["G3", "C4", "C4", "C4"],
+    ["A2", ["C3", "C3"], "A2", "C3"],
     "4n"
   ).start(0);
 
@@ -63,7 +66,7 @@ class Example3 extends BaseSound {
 
   constructor(channel: Channel) {
     super(channel);
-    this.bell.chain(this.tremolo);
+    // this.bell.chain(this.tremolo);
     this.congo.chain(this.pingPong);
 
     this.init();
@@ -96,7 +99,7 @@ class Example3 extends BaseSound {
 
   start(time?: Time) {
     if (!this.initialized) return;
-    this.grain?.start(time);
+    // this.grain?.start(time);
   }
 
   stop(time: Time) {

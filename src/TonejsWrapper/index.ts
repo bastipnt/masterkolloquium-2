@@ -1,5 +1,5 @@
 import { AmplitudeEnvelope, getTransport, now as timeNow, start, Channel } from "tone";
-import type BaseSound from "./BaseSound";
+import BaseSound from "./BaseSound";
 import OSCExample1 from "./OSCExample1";
 import { Sounds } from "./types.d";
 import Example2 from "./Example2";

@@ -4,16 +4,29 @@
 
 <section>
   <section>
-    <h4>Browser Music:</h4>
-    <ul>
-      <li class="fragment fade-in-then-semi-out"><b>Use:</b> Web Audio API</li>
-      <li class="fragment fade-in-then-semi-out">
-        Allows to create generative music in the browser
-      </li>
-    </ul>
+    <h4>Web Audio API</h4>
 
     <aside class="notes">
-      <p>available since April 2021 across mayor browsers (MDN)</p>
+      <ul>
+        <li>now to the more fun part the music</li>
+        <li>
+          people who want to see my project will navigate to a website where I create their browser
+          fingerprint
+        </li>
+        <li>to convert that into music I have a lot of different options</li>
+        <li>I could send the fingerprint information to a server and create the music there</li>
+        <li>
+          or thanks to a API introduced to all major browsers in April 2021 I can create the music
+          on the fly in the users browser without the need of an extra server -> makes things much
+          more easy
+        </li>
+        <li>the api is called Web Audio API</li>
+        <li>
+          it is basically a toolkit that provides the ability to create any music you want directly
+          in the browser
+        </li>
+        <li>I prepared two examples to show what it can do on the next two slides</li>
+      </ul>
     </aside>
   </section>
 
@@ -39,6 +52,15 @@
         </code>
       </pre>
     </div>
+
+    <aside class="notes">
+      <ul>
+        <li>simple oscillator</li>
+        <li>-> it can be more easy by using the library tone.js</li>
+        <li>-> provides predefined instruments and effects</li>
+        <li>-> also makes scheduling more easy</li>
+      </ul>
+    </aside>
   </section>
 
   <section id={Sounds.Example2}>
@@ -96,4 +118,4 @@
   </section>
 </section>
 
-<section data-background-iframe="https://tonejs.github.io/examples/"></section>
+<!-- <section data-background-iframe="https://tonejs.github.io/examples/"></section> -->

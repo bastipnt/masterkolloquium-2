@@ -1,9 +1,9 @@
-import { AmplitudeEnvelope, Channel, Oscillator } from "tone";
+import { Channel, Oscillator } from "tone";
 import BaseSound from "./BaseSound";
 import type { Time } from "tone/build/esm/core/type/Units";
 
 class OSCExample1 extends BaseSound {
-  osc = new Oscillator(260);
+  osc = new Oscillator(262);
 
   constructor(channel: Channel) {
     super(channel);
