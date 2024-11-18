@@ -35,7 +35,9 @@
     await tick();
     console.log("finish");
     deck = new Reveal(reveal);
-    deck.initialize();
+    await deck.initialize();
+
+    slideState.currentSlide = deck.getCurrentSlide();
 
     deck.on("slidechanged", (e) => {
       // @ts-ignore
@@ -59,7 +61,7 @@
 </svelte:head>
 
 <div class="slides">
-  <Presentation />
+  <Presentation canvasEl={canvasEL} />
 </div>
 <Controls canvasEl={canvasEL} />
 <CanvasBg bind:canvasEl={canvasEL} />

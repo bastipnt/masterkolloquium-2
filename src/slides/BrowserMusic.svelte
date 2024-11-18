@@ -81,7 +81,7 @@
     </pre>
   </section>
 
-  <section id={Sounds.Example3}>
+  <!-- <section id={Sounds.Example3}>
     <h4>Example #3:</h4>
     <pre class="fragment">
       <code data-trim data-line-numbers="1-5|7-10|12-15|17-20" class="language-ts">
@@ -109,7 +109,7 @@
         `}
       </code>
     </pre>
-  </section>
+  </section> -->
 </section>
 
 <!-- <section data-background-iframe="https://tonejs.github.io/examples/"></section> -->
