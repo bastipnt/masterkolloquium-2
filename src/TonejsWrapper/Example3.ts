@@ -8,16 +8,21 @@ import {
   Sequence,
   ToneAudioBuffer,
   Tremolo,
-  Channel,
+  Time as ToneTime,
 } from "tone";
 
 import BaseSound from "./BaseSound";
 import coffeSample from "../assets/samples/coffee_1.mp3";
 import type { Time } from "tone/build/esm/core/type/Units";
+import { RhythmPattern, Scale } from "tonal";
+import { map } from "../utils/number";
 
 class Example3 extends BaseSound {
   private initialized = false;
-  private grain?: GrainPlayer;
+
+  private notes = Scale.get("c3 pentatonic").notes;
+
+  grain?: GrainPlayer;
 
   private loop?: Loop;
   private bar = 0;
@@ -45,28 +50,27 @@ class Example3 extends BaseSound {
   ).start(0);
 
   private congo = new MembraneSynth({
-    pitchDecay: 0.008,
-    octaves: 2,
-    envelope: { attack: 0.0006, decay: 0.5, sustain: 0 },
+    pitchDecay: 0.08,
+    octaves: 3,
+    envelope: { attack: 0.006, decay: 0.5, sustain: 0 },
   });
   private congoSequence = new Sequence(
-    (time, note) => {
-      this.bar += 1;
-      if (note === null) return;
-      // if (Math.random() < 0.3) return;
-      if (this.bar % 8 === 0) return;
+    (time, beat) => {
+      if (!beat) return;
+
+      const note = this.getRandomNote();
       this.congo.triggerAttack(note, time, Math.random() * 0.5 + 0.5);
     },
-    ["A2", ["C3", "C3"], "A2", "C3"],
+    RhythmPattern.random(8, 0.2),
     "4n"
   ).start(0);
 
-  private pingPong = new PingPongDelay("16n", 0.2).connect(this.channel);
-  private tremolo = new Tremolo(9, 0.75).connect(this.channel).start(0);
+  private pingPong = new PingPongDelay("16n", 0.2).connect(this.gain);
+  private tremolo = new Tremolo(9, 0.75).connect(this.gain).start(0);
 
-  constructor(channel: Channel) {
-    super(channel);
-    // this.bell.chain(this.tremolo);
+  constructor(gain: Gain) {
+    super(gain);
+    this.bell.chain(this.tremolo);
     this.congo.chain(this.pingPong);
 
     this.init();
@@ -111,6 +115,11 @@ class Example3 extends BaseSound {
     new Promise((resolve) => {
       new ToneAudioBuffer(coffeSample, (buffer) => resolve(buffer));
     });
+
+  private getRandomNote() {
+    const noteIndex = Math.floor(map(Math.random(), 0, 1, 0, this.notes.length));
+    return this.notes[noteIndex];
+  }
 }
 
 export default Example3;

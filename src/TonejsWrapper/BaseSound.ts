@@ -1,11 +1,11 @@
-import type { Channel } from "tone";
+import type { Gain } from "tone";
 import type { Time } from "tone/build/esm/core/type/Units";
 
 abstract class BaseSound {
-  channel: Channel;
+  gain: Gain;
 
-  constructor(channel: Channel) {
-    this.channel = channel;
+  constructor(gain: Gain) {
+    this.gain = gain;
   }
 
   abstract start(time?: Time): void;

@@ -1,13 +1,13 @@
-import { Channel, Oscillator } from "tone";
+import { Gain, Oscillator } from "tone";
 import BaseSound from "./BaseSound";
 import type { Time } from "tone/build/esm/core/type/Units";
 
 class OSCExample1 extends BaseSound {
   osc = new Oscillator(262);
 
-  constructor(channel: Channel) {
-    super(channel);
-    this.osc.connect(this.channel);
+  constructor(gain: Gain) {
+    super(gain);
+    this.osc.connect(this.gain);
   }
 
   start(time?: Time) {

@@ -1,4 +1,4 @@
-import { AmplitudeEnvelope, getTransport, now as timeNow, start, Channel } from "tone";
+import { AmplitudeEnvelope, getTransport, now as timeNow, start, Gain } from "tone";
 import BaseSound from "./BaseSound";
 import OSCExample1 from "./OSCExample1";
 import { Sounds } from "./types.d";
@@ -15,9 +15,9 @@ class TonejsWrapper {
     release: 0.8,
   }).toDestination();
 
-  private channel1 = new Channel();
-  private channel2 = new Channel();
-  private channel3 = new Channel();
+  private gain1 = new Gain();
+  private gain2 = new Gain();
+  private gain3 = new Gain();
 
   private canvasEl?: HTMLCanvasElement;
   private visualisation?: SignalVisualisation;
@@ -25,9 +25,9 @@ class TonejsWrapper {
   playing = false;
 
   constructor(canvasEl?: HTMLCanvasElement) {
-    this.sounds.set(Sounds.Example1, new OSCExample1(this.channel1));
-    this.sounds.set(Sounds.Example2, new Example2(this.channel2));
-    this.sounds.set(Sounds.Example3, new Example3(this.channel3));
+    this.sounds.set(Sounds.Example1, new OSCExample1(this.gain1));
+    this.sounds.set(Sounds.Example2, new Example2(this.gain2));
+    this.sounds.set(Sounds.Example3, new Example3(this.gain3));
 
     this.canvasEl = canvasEl;
     if (this.canvasEl) {
@@ -50,14 +50,14 @@ class TonejsWrapper {
     if (!sound) return;
 
     this.sounds.forEach((s) => {
-      if (s !== sound) s.channel.disconnect();
+      if (s !== sound) s.gain.disconnect();
     });
 
     const now = timeNow();
 
     getTransport().start(now);
     sound.start(now);
-    sound.channel.connect(this.mainADSR);
+    sound.gain.connect(this.mainADSR);
 
     this.mainADSR.triggerAttack();
     this.playing = true;

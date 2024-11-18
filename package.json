@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "reveal.js": "^5.1.0",
+    "tonal": "^6.3.0",
     "tone": "^15.1.3"
   }
 }
