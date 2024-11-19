@@ -5,7 +5,6 @@
 # Content
 
 - WebAudioApi (short overview)
-- [ ] Add diagram of web audio api [presentation::tba]
 - Generate music with the help of **tone.js**
 - 
 

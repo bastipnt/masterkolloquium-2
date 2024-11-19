@@ -43,4 +43,4 @@
 - Thesis question: Data Protection: How does your digital fingerprint sound.
 
 
-- [ ] Before I get into the Project some more on data protection??? [presentation::tba] 
+- [x] Before I get into the Project some more on data protection??? [presentation::tba] 

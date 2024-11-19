@@ -14,11 +14,6 @@
 ## Slide 2
 
 **Attributes:**
-- [ ] show list of attributes [presentation::tba] 
-- Canvas: 2D, WebGl, WebGl2
-- Audio: Audio fingerprinting
-- [ ] add more information and notes for canvas and audio [presentation::tba] 
-
 
 **-> next slide: fingerprint examples**
 

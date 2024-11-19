@@ -8,4 +8,3 @@
 - privacy-critical websites still contain trackers, but less (60% vs 90%) -> [[schelterUbiquityWebTracking2016|ref-AGYLNMAJ]] 
 - inclusion of third-party content can (and in many cases do) track users across many sites and record their browsing behaviour -> [[schelterUbiquityWebTracking2016|ref-AGYLNMAJ]] 
 	- Can be a simple image from an cdn
-	- [ ] show demo of cdn image? [presentation::tba] 
