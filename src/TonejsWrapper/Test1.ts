@@ -17,8 +17,6 @@ import type { Time } from "tone/build/esm/core/type/Units";
 import type { RecursivePartial } from "tone/build/esm/core/util/Interface";
 
 class Test1 extends BaseSound {
-  scale = "C4 major";
-  scaleDegrees = Scale.degrees(this.scale);
   chordRhythmPatterns = [
     RhythmPattern.onsets(1, 2, 1),
     RhythmPattern.onsets(1, 1, 2),
@@ -40,7 +38,7 @@ class Test1 extends BaseSound {
     this.pingPong,
     this.reverb,
     this.synthFilter,
-    this.gain
+    this.mainGain
   );
   synthOptions: RecursivePartial<FMSynthOptions> = {
     envelope: { attack: 0.3, decay: 0.4, sustain: 0.8, release: 0.6 },
@@ -73,7 +71,7 @@ class Test1 extends BaseSound {
     this.pingPong,
     this.reverb,
     this.bgSynthFilter,
-    this.gain
+    this.mainGain
   );
   bgSynthOptions: RecursivePartial<FMSynthOptions> = {
     envelope: { attack: 2, decay: 0.4, sustain: 0.7, release: 10 },
@@ -110,7 +108,6 @@ class Test1 extends BaseSound {
 
   constructor(gain: Gain) {
     super(gain);
-    this.gain.set({ gain: 1 });
 
     // document.addEventListener("mousemove", ({ clientX, clientY }) => {
     //   this.synth.set({
@@ -126,23 +123,6 @@ class Test1 extends BaseSound {
 
   stop(time: Time) {
     // this.synth.triggerRelease(time);
-  }
-
-  getRndChordRythmPattern() {
-    return this.chordRhythmPatterns[
-      mapFloor(Math.random(), 0, 1, 0, this.chordRhythmPatterns.length)
-    ];
-  }
-
-  getRndChordNotes(range: [number, number]) {
-    return this.getRndChordRythmPattern()
-      .map((val, index) => {
-        if (val === 0) return;
-        const chordRoot = mapFloor(Math.random(), 0, 1, range[0], range[1]);
-        const degree = chordRoot + index;
-        return this.scaleDegrees(degree);
-      })
-      .filter((note) => !!note);
   }
 }
 

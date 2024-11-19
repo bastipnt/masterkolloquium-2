@@ -65,8 +65,8 @@ class Example3 extends BaseSound {
     "4n"
   ).start(0);
 
-  private pingPong = new PingPongDelay("16n", 0.2).connect(this.gain);
-  private tremolo = new Tremolo(9, 0.75).connect(this.gain).start(0);
+  private pingPong = new PingPongDelay("16n", 0.2).connect(this.mainGain);
+  private tremolo = new Tremolo(9, 0.75).connect(this.mainGain).start(0);
 
   constructor(gain: Gain) {
     super(gain);
