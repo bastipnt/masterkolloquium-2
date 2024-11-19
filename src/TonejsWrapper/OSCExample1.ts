@@ -7,15 +7,17 @@ class OSCExample1 extends BaseSound {
 
   constructor(gain: Gain) {
     super(gain);
-    this.osc.connect(this.mainGain);
+    this.osc.connect(this.envelope);
   }
 
   start(time?: Time) {
     this.osc.start(time);
+    super.start(time);
   }
 
   stop(time: Time) {
     this.osc.stop(time);
+    super.stop(time);
   }
 }
 

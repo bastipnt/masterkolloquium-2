@@ -38,7 +38,7 @@ class Test1 extends BaseSound {
     this.pingPong,
     this.reverb,
     this.synthFilter,
-    this.mainGain
+    this.envelope
   );
   synthOptions: RecursivePartial<FMSynthOptions> = {
     envelope: { attack: 0.3, decay: 0.4, sustain: 0.8, release: 0.6 },
@@ -71,7 +71,7 @@ class Test1 extends BaseSound {
     this.pingPong,
     this.reverb,
     this.bgSynthFilter,
-    this.mainGain
+    this.envelope
   );
   bgSynthOptions: RecursivePartial<FMSynthOptions> = {
     envelope: { attack: 2, decay: 0.4, sustain: 0.7, release: 10 },
@@ -115,14 +115,6 @@ class Test1 extends BaseSound {
     //   });
     //   console.log({ clientX, clientY });
     // });
-  }
-
-  start(time: Time) {
-    // this.synth.triggerAttack("A4", time);
-  }
-
-  stop(time: Time) {
-    // this.synth.triggerRelease(time);
   }
 }
 

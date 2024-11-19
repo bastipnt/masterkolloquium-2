@@ -65,17 +65,16 @@
     <pre>
       <code data-trim data-line-numbers="1|3-5|7-8|10-11" class="language-ts">
         {`
-          const synth = new PolySynth();
+          const synth = new FMSynth();
 
-          const seq = new Sequence((time, note) => {
+          const pattern = new Pattern((time, note) => {
             synth.triggerAttackRelease(note, 0.1, time);
-          }, ["C4", ["E3", "D5", "E4"], "G3", ["A4", "G5"]]);
+          }, ["C4", "D5", "G3", "A4"]);
 
-          pingPong = new PingPongDelay("16n", 0.2).toDestination();
-          tremolo = new Tremolo(9, 0.75).start();
+          const reverb = new Reverb().toDestination();
 
-          synth.chain(tremolo, pingPong);
-          seq.start();
+          synth.connect(reverb);
+          pattern.start();
         `}
       </code>
     </pre>

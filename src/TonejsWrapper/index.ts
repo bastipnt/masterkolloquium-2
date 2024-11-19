@@ -50,14 +50,14 @@ class TonejsWrapper {
     if (!sound) return;
 
     this.sounds.forEach((s) => {
-      if (s !== sound) s.gain.disconnect();
+      if (s !== sound) s.mainGain.disconnect();
     });
 
     const now = timeNow();
 
     getTransport().start(now);
     sound.start(now);
-    sound.gain.connect(this.mainADSR);
+    sound.mainGain.connect(this.mainADSR);
 
     this.mainADSR.triggerAttack();
     this.playing = true;
