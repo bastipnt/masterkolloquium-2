@@ -16,7 +16,7 @@ import { map, mapFloor } from "../utils/number";
 import type { Time } from "tone/build/esm/core/type/Units";
 import type { RecursivePartial } from "tone/build/esm/core/util/Interface";
 
-class Example2 extends BaseSound {
+class Test1 extends BaseSound {
   scale = "C4 major";
   scaleDegrees = Scale.degrees(this.scale);
   chordRhythmPatterns = [
@@ -146,4 +146,4 @@ class Example2 extends BaseSound {
   }
 }
 
-export default Example2;
+export default Test1;
