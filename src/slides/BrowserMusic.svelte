@@ -8,24 +8,20 @@
 
     <aside class="notes">
       <ul>
-        <li>now to the more fun part the music</li>
-        <li>
-          people who want to see my project will navigate to a website where I create their browser
-          fingerprint
-        </li>
-        <li>to convert that into music I have a lot of different options</li>
-        <li>I could send the fingerprint information to a server and create the music there</li>
-        <li>
-          or thanks to a API introduced to all major browsers in April 2021 I can create the music
-          on the fly in the users browser without the need of an extra server -> makes things much
-          more easy
-        </li>
-        <li>the api is called Web Audio API</li>
-        <li>
-          it is basically a toolkit that provides the ability to create any music you want directly
-          in the browser
-        </li>
-        <li>I prepared two examples to show what it can do on the next two slides</li>
+        <li>my project -> people navigate to website</li>
+        <li>how to play sound?</li>
+        <li>how to include BF?</li>
+        <li>different options</li>
+        <li>on a server</li>
+        <li>downside -> have server send BF there</li>
+        <li>on the client computer</li>
+        <li>no server needed</li>
+        <li>new API</li>
+        <li>Web Audio API (support: April 2021)</li>
+        <li>allows creation of music in browser</li>
+        <li>like digital audio workstation</li>
+        <li>but with code</li>
+        <li>demo on next slides</li>
       </ul>
     </aside>
   </section>

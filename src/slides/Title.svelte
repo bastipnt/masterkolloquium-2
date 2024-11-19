@@ -138,10 +138,10 @@
 
     <aside class="notes">
       <ul>
-        <li>my topic is about data protection</li>
-        <li>will start with my motivation for this topic</li>
-        <li>some questions I ask myself: (questions on slide)</li>
-        <li>digged into that topic and found out: -> next slide</li>
+        <li>topic: about <b>data protection</b></li>
+        <li>start: with my motivation</li>
+        <li>I ask myself: (questions on slide)</li>
+        <li>digged into & found out: -> next slide</li>
       </ul>
     </aside>
   </section>
@@ -155,19 +155,11 @@
       <h4>1:</h4>
       <ul>
         <li>study investigated 100k of websites</li>
-        <li>
-          separated it into a group of websites, that are privacy critical (health care, banking,
-          porn, ...)
-        </li>
-        <li>and group that is less privacy critical</li>
-        <li>
-          -> found out, that on critical 60% contain trackers and on less critical 90% contain
-          trackers
-        </li>
-        <li>
-          also they found out, that there are only a few companies who provide trackers on these
-          websites:
-        </li>
+        <li><b>group 1</b> privacy critical: health care, banking, porn, ...</li>
+        <li><b>group 2</b> less privacy critical</li>
+        <li>group 1: 60% contain trackers</li>
+        <li>group 2: 90% contain trackers</li>
+        <li>trackers only from few companies</li>
         <li>like Google or Facebook ...</li>
       </ul>
 
@@ -178,11 +170,8 @@
 
       <h4>3:</h4>
       <ul>
-        <li>
-          There are multiple ways a website can track you, they can use on of the ways or all in
-          combination
-        </li>
-        <li>Will give a short intro on the next slide</li>
+        <li>multiple ways to track you</li>
+        <li>short intro -> next slide</li>
       </ul>
     </aside>
   </section>
@@ -198,61 +187,48 @@
 
     <aside class="notes">
       <ul>
-        <li><b>IP tracking:</b> unique number to identify where the user is located</li>
+        <li><b>IP tracking:</b> simplest -> gives unique number and location</li>
+        <li><b>Cookies:</b></li>
+        <li>File: stored on a users computer</li>
+        <li>Information: usually about prefercences, activities</li>
+        <li>Example: online shopping</li>
+        <li>shopping cart -> don't loose it</li>
+        <li><b>Fingerprinting:</b></li>
+        <li>Unique identifier based on browser attributes</li>
         <li>
-          <b>Cookies:</b> File, websites store on a users computer. It usually contains some information
-          about the users preferences and there activities. For example when online shopping, the article
-          numbers of the users shopping cart can be stored in a cookie and you don't loos the articles
-          when closing the browser
+          e.g.: operating system, screen size, language settings, IP address, installed browser
+          plugins, and many more.
         </li>
-        <li>
-          <b>Fingerprinting:</b> A unique identifier is created based on the attributes, that can be
-          obtained when navigating to a website: These include the operating system, screen size, language
-          settings, IP address, installed browser plugins, and many more.
-        </li>
-        <li>
-          <b>Tracking pixels:</b> (or web beacon) small image file that is loaded when you open a webpage
-          or email containing it. Here the focus is not about the image itself, its mostly hidden for
-          the user, but the process of loading it. Because when you open a email and the tracking pixel
-          image is loaded from a remote server the sender of the email knows, that you looked at the
-          email. Spammers can integrate tracking pixels in their spam mails to find out if a mail address
-          is valid.
-        </li>
-        <li>
-          <b>Cross-website tracking:</b> This answers the question of "how can advertisers know what
-          I like?" -> User visits website A and looks at shoes -> website A sends back a cookie with
-          a unique ID -> user navigates some time later to website B -> website B can read the cookie
-          from website A and see that the user is interested in shoes -> so they can show advertisement
-          about shoes
-        </li>
+        <li><b>Tracking pixels:</b> (or web beacon)</li>
+        <li>small image file</li>
+        <li>on pageload -> webpage or email</li>
+        <li>Focus not image itself -> mostly hidden</li>
+        <li>process of loading image</li>
+        <li>loaded from remote server -> serverknows who loaded it</li>
+        <li>Spammers use spam mails -> mail address is valid?</li>
+        <li><b>Cross-website tracking:</b></li>
+        <li>Answer ofquestion: "how can advertisers know what I like?"</li>
+        <li>Example: visit website A (shoes)</li>
+        <li>A sends back tracking cookie</li>
+        <li>user to website B</li>
+        <li>B knows about website A and can show shoe ads</li>
       </ul>
 
       <h4>My thoughts:</h4>
 
       <ul>
-        <li>For me this is pretty scary and concerning</li>
-        <li>Thats why I wanna do a project with that topic</li>
-        <li>
-          There are already really good websites that educate about this topic, so I wanted to take
-          another approach
-        </li>
-        <li>I want to combine this information sharing with art</li>
-        <li>the way I wanna do it is with music (cause I'm interested in doing music)</li>
-        <li>I want to focus on one of the methods -> Browser Fingerprinting</li>
-        <li>
-          because it is the most sneaky one and the most difficult one to protect yourself from
-        </li>
-        <li>with the browser fingerprint we get a lot of different attributes</li>
-        <li>and I want to use these attributes to create music</li>
-        <li>
-          so in other words I will create a unique sound for everyone visiting my project based on
-          their browser fingerprint
-        </li>
-        <li>
-          I think it is pretty matching to the topic because the BF is something really in the
-          background, something hidden and I want to make it loud and experienceable
-        </li>
-        <li>so I come to my Title so far:</li>
+        <li>scary and concerning</li>
+        <li>reason for this project</li>
+        <li>already good websites that educate about this</li>
+        <li>want to take another approach</li>
+        <li>combine information sharing with art</li>
+        <li>way: wit generative music</li>
+        <li>focus: browser fingerprint</li>
+        <li>because: sneaky and not easy to protect from, good infos about you</li>
+        <li>use BF attributes for music</li>
+        <li>will have uniqe sound for visitor</li>
+        <li>make something hidden experienceable</li>
+        <li>next: Title</li>
       </ul>
     </aside>
   </section>
