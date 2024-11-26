@@ -59,7 +59,7 @@
   <section id={Sounds.Example2}>
     <h1 class="r-fit-text">Example 2: Use of tone.js</h1>
     <pre>
-      <code data-trim data-line-numbers="1|3-5|7-8|10-11" class="language-ts">
+      <code data-trim data-line-numbers="1|3-5|7|9-10" class="language-ts">
         {`
           const synth = new FMSynth();
 

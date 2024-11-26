@@ -1,4 +1,4 @@
-- [[Browser Fingerprinting|Browser fingerprinting]] is now present on more than 10% of the top-100k websites. -> [[iqbalFingerprintingFingerprintersLearning2021#^FDKI3BV3|ref]] 
+- [[Browser Fingerprint|Browser fingerprinting]] is now present on more than 10% of the top-100k websites. -> [[iqbalFingerprintingFingerprintersLearning2021#^FDKI3BV3|ref]] 
 - **Health data** being misused for advertising. -> [[libertWhatWebBrowsing2015|ref]] 
 - tracking data usage for: advertising or fraud prevention -> [[casselOmniCrawlComprehensiveMeasurement2022|ref]] 
 - **Header bidding** -> if user is known more money -> [[liuIdentifiedTargetedFirstEarly2024|ref]] 

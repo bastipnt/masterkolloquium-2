@@ -27,4 +27,4 @@
 
 # Ressources
 
-- [[Browser Fingerprinting]]
+- [[Browser Fingerprint]]

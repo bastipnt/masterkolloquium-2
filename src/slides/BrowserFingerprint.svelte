@@ -53,5 +53,5 @@
 
 <section data-background-iframe="https://amiunique.org/fingerprint"></section>
 
-<section data-background-iframe="https://fingerprint.com/"></section>
+<!-- <section data-background-iframe="https://fingerprint.com/"></section> -->
 <!-- <section>Fingerprint.com</section> -->

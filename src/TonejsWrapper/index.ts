@@ -2,7 +2,7 @@ import { AmplitudeEnvelope, getTransport, now as timeNow, start, Gain } from "to
 import BaseSound from "./BaseSound";
 import OSCExample1 from "./OSCExample1";
 import { Sounds } from "./types.d";
-import Example2 from "./Example2";
+import Example2 from "./ToneExample2";
 import Example3 from "./Example3";
 import SignalVisualisation from "./SignalVisualisation";
 
