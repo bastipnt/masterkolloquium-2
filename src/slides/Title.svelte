@@ -155,7 +155,7 @@
       <h4>1:</h4>
       <ul>
         <li>study investigated 100k of websites</li>
-        <li><b>group 1</b> privacy critical: health care, banking, porn, ...</li>
+        <li><b>group 1</b> privacy critical: health, sexuality, gender identity, addiction.</li>
         <li><b>group 2</b> less privacy critical</li>
         <li>group 1: 60% contain trackers</li>
         <li>group 2: 90% contain trackers</li>
