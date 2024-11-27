@@ -180,9 +180,8 @@
     <ul>
       <li>IP Tracking</li>
       <li>Cookies</li>
-      <li>Fingerprinting</li>
       <li>Tracking pixels (web beacon)</li>
-      <li>Cross-website tracking</li>
+      <li>Fingerprinting</li>
     </ul>
 
     <aside class="notes">
