@@ -3,12 +3,6 @@
   import { onMount, tick } from "svelte";
   import Presentation from "./Presentation.svelte";
   import { setSlideContext, type SlideState } from "./context/SlideContext";
-  import {
-    defaultPlaybackContext,
-    setPlaybackContext,
-    type PlaybackContext,
-  } from "./context/PlaybackContext";
-  import Controls from "./lib/Controls.svelte";
   import CanvasBg from "./lib/CanvasBG.svelte";
 
   type Props = {
@@ -27,9 +21,6 @@
     fragmentHidden: null,
   });
   setSlideContext(slideState);
-
-  const playbackContext = $state<PlaybackContext>(defaultPlaybackContext);
-  setPlaybackContext(playbackContext);
 
   onMount(async () => {
     await tick();
@@ -63,5 +54,4 @@
 <div class="slides">
   <Presentation canvasEl={canvasEL} />
 </div>
-<Controls canvasEl={canvasEL} />
 <CanvasBg bind:canvasEl={canvasEL} />

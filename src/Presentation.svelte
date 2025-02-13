@@ -1,8 +1,9 @@
 <script lang="ts">
   import Title from "./slides/Title.svelte";
-  import BrowserFingerprint from "./slides/BrowserFingerprint.svelte";
-  import BrowserMusic from "./slides/BrowserMusic.svelte";
   import Conclusion from "./slides/Outlook.svelte";
+  import Mitigation from "./slides/Mitigation.svelte";
+  import Survey from "./slides/Survey.svelte";
+  import Project from "./slides/Project.svelte";
 
   type Props = {
     canvasEl?: HTMLCanvasElement;
@@ -12,6 +13,7 @@
 </script>
 
 <Title {canvasEl} />
-<BrowserFingerprint />
-<BrowserMusic />
+<Mitigation />
+<Survey />
+<Project />
 <Conclusion />
