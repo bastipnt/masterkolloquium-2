@@ -132,9 +132,29 @@
     <h2 class="r-fit-text">How does your digital fingerprint sound</h2>
   </section>
 
-  <section>Web tracking</section>
+  <section id="web-tracking">
+    <h1 class="text-left">Web Tracking</h1>
+    <ul>
+      <li>More and more websites are using trackers</li>
+      <li>Advertising companies like Google or Meta generate billions in revenue</li>
+    </ul>
+  </section>
 
-  <section>Usage</section>
+  <section id="usage">
+    <h1 class="text-left">Use</h1>
+    <ul>
+      <li>Insights into user behavior for website owners</li>
+      <li>Prevention of malicious online activities</li>
+      <li>Bot detection</li>
+    </ul>
+  </section>
 
-  <section>Misuse</section>
+  <section id="misuse">
+    <h1 class="text-left">Misuse</h1>
+    <ul>
+      <li>Data collection without explicit consent</li>
+      <li>Manipulation concerns: Cambridge Analytica (2016)</li>
+      <li>Mass surveillance by governments, corporations, and other political actors</li>
+    </ul>
+  </section>
 </section>

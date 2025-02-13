@@ -1,17 +1,9 @@
 <section>
-  <h1 class="r-fit-text">Outlook</h1>
+  <h1 class="text-left">Outlook</h1>
 
   <ul>
-    <li>Deeper investigation of the Browser Fingerprint</li>
-    <li>What kind of sound/music do I want to create?</li>
-    <li>How do I want to present the topic to users?</li>
-    <li>What attributes from the Browser Fingerprint shall I use to create the sound?</li>
+    <li>Final evaluation of the survey</li>
+    <li>Finish the project</li>
+    <li>Finish writing</li>
   </ul>
-
-  <aside class="notes">
-    <ul>
-      <li>I want to:</li>
-      <li>Points on Slide</li>
-    </ul>
-  </aside>
 </section>

@@ -1,0 +1,507 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{DigitalAdvertisingRevenue}{online}{}
+      \list{organization}{1}{%
+        {Statista}%
+      }
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In 2023, Meta Platforms earned over 131 billion U.S.}
+      \field{langid}{english}
+      \field{title}{Digital Advertising Revenue of Leading Online Companies 2023}
+      \field{urlday}{31}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/MV5B4ERX/digital-advertising-revenue-of-leading-online-companies.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.statista.com/statistics/205352/digital-advertising-revenue-of-leading-online-companies/
+      \endverb
+      \verb{url}
+      \verb https://www.statista.com/statistics/205352/digital-advertising-revenue-of-leading-online-companies/
+      \endverb
+    \endentry
+    \entry{lernerInternetJonesRaiders2016}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=983c5d961f7cdc5d841d347a810dc001}{%
+           family={Lerner},
+           familyi={L\bibinitperiod},
+           given={Ada},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4f5427476d1ffc8cfc6a53fc89137a0f}{%
+           family={Simpson},
+           familyi={S\bibinitperiod},
+           given={Anna\bibnamedelima Kornfeld},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=ac531ee83558be0e3798db153ad74d17}{%
+           family={Kohno},
+           familyi={K\bibinitperiod},
+           given={Tadayoshi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1f8f5a22b3eba624c1912040accfd0e9}{%
+           family={Roesner},
+           familyi={R\bibinitperiod},
+           given={Franziska},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb95fe70a5189f0ba89ebc8b55b0282a}
+      \strng{fullhash}{37cb0eb43379df44bf8ae6c96342f605}
+      \strng{bibnamehash}{fb95fe70a5189f0ba89ebc8b55b0282a}
+      \strng{authorbibnamehash}{fb95fe70a5189f0ba89ebc8b55b0282a}
+      \strng{authornamehash}{fb95fe70a5189f0ba89ebc8b55b0282a}
+      \strng{authorfullhash}{37cb0eb43379df44bf8ae6c96342f605}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{eventtitle}{25th {{USENIX Security Symposium}} ({{USENIX Security}} 16)}
+      \field{langid}{english}
+      \field{shorttitle}{Internet {{Jones}} and the {{Raiders}} of the {{Lost Trackers}}}
+      \field{title}{Internet {{Jones}} and the {{Raiders}} of the {{Lost Trackers}}: {{An Archaeological Study}} of {{Web Tracking}} from 1996 to 2016}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/YUGWAHA4/Lerner et al. - 2016 - Internet Jones and the Raiders of the Lost Trackers An Archaeological Study of Web Tracking from 19.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/lerner
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/lerner
+      \endverb
+    \endentry
+    \entry{meineckGigantischesDatenLeakDroht2025}{online}{}
+      \name{author}{2}{}{%
+        {{hash=ad8f8c9bcec09d3d93fe01190142f0e2}{%
+           family={Meineck},
+           familyi={M\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=196edf7fcc5922d5b3b806da31c1a653}{%
+           family={Dachwitz},
+           familyi={D\bibinitperiod},
+           given={Ingo},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {netzpolitik.org}%
+      }
+      \strng{namehash}{14fad9ece5a409b551a3c8cc0ecb8845}
+      \strng{fullhash}{14fad9ece5a409b551a3c8cc0ecb8845}
+      \strng{bibnamehash}{14fad9ece5a409b551a3c8cc0ecb8845}
+      \strng{authorbibnamehash}{14fad9ece5a409b551a3c8cc0ecb8845}
+      \strng{authornamehash}{14fad9ece5a409b551a3c8cc0ecb8845}
+      \strng{authorfullhash}{14fad9ece5a409b551a3c8cc0ecb8845}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Einer der bekanntesten US-Databroker wurde offenbar Ziel eines Hackerangriffs: Gravy Analytics. Es geht um gigantische Mengen von Standortdaten, gesammelt durch populäre Handy-Apps. Erste Ausschnitte der erbeuteten Daten halten Fachleute für authentisch.}
+      \field{day}{9}
+      \field{hour}{19}
+      \field{langid}{ngerman}
+      \field{minute}{32}
+      \field{month}{1}
+      \field{second}{21}
+      \field{shorttitle}{Gigantisches Daten-Leak droht}
+      \field{timezone}{+01\bibtzminsep 00}
+      \field{title}{Gigantisches Daten-Leak droht: Hacker wollen Bestände von US-Databroker veröffentlichen}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/HKQB79WB/gigantisches-daten-leak-droht-hacker-wollen-bestaende-von-us-databroker-veroeffentlichen.html
+      \endverb
+      \verb{urlraw}
+      \verb https://netzpolitik.org/2025/gigantisches-daten-leak-droht-hacker-wollen-bestaende-von-us-databroker-veroeffentlichen/
+      \endverb
+      \verb{url}
+      \verb https://netzpolitik.org/2025/gigantisches-daten-leak-droht-hacker-wollen-bestaende-von-us-databroker-veroeffentlichen/
+      \endverb
+    \endentry
+    \entry{nambiarWebsiteTrackingHow2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d83222c6f09318d19e89c92ab43f381a}{%
+           family={Nambiar},
+           familyi={N\bibinitperiod},
+           given={Shreya\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {CookieYes}%
+      }
+      \strng{namehash}{d83222c6f09318d19e89c92ab43f381a}
+      \strng{fullhash}{d83222c6f09318d19e89c92ab43f381a}
+      \strng{bibnamehash}{d83222c6f09318d19e89c92ab43f381a}
+      \strng{authorbibnamehash}{d83222c6f09318d19e89c92ab43f381a}
+      \strng{authornamehash}{d83222c6f09318d19e89c92ab43f381a}
+      \strng{authorfullhash}{d83222c6f09318d19e89c92ab43f381a}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Enhance site performance with legal website tracking. Learn how to track your site's users (+ how to stop web tracking if you are a site visitor)}
+      \field{day}{14}
+      \field{langid}{american}
+      \field{month}{6}
+      \field{shorttitle}{Website {{Tracking}}}
+      \field{title}{Website {{Tracking}}: {{How}} and {{Why Websites Track}}}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/34CUWISA/website-tracking.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cookieyes.com/blog/website-tracking/
+      \endverb
+      \verb{url}
+      \verb https://www.cookieyes.com/blog/website-tracking/
+      \endverb
+    \endentry
+    \entry{sanchez-rolaWebWatchingYou2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=586bbe8a0d03372c349bf2de8bcf257b}{%
+           family={Sanchez-Rola},
+           familyi={S\bibinithyphendelim R\bibinitperiod},
+           given={Iskander},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f6aa2a71c1891e6fbe542ef4684738a4}{%
+           family={Ugarte-Pedrero},
+           familyi={U\bibinithyphendelim P\bibinitperiod},
+           given={Xabier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=5aebc62df20c56da945f583a9009ff06}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2049d6a1a25e7d13476d6684973a5072}{%
+           family={Bringas},
+           familyi={B\bibinitperiod},
+           given={Pablo\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd44a4c994eb3c9cc7596d6bc352d6c1}
+      \strng{fullhash}{ef054d96ea365974b474292f3994b4bb}
+      \strng{bibnamehash}{fd44a4c994eb3c9cc7596d6bc352d6c1}
+      \strng{authorbibnamehash}{fd44a4c994eb3c9cc7596d6bc352d6c1}
+      \strng{authornamehash}{fd44a4c994eb3c9cc7596d6bc352d6c1}
+      \strng{authorfullhash}{ef054d96ea365974b474292f3994b4bb}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Web tracking is a commonly-used practice on the Internet devoted to retrieve user information for activities such as personalization or advertisement. These techniques are said to drive the web economy, although they are commonly used to invade users' privacy. In the last years, a general concern raised about web tracking, looking forward to combat it in many ways like regulations, anti-tracking methods and even standardization. In this paper, we analyze and discuss the current techniques for web-tracking as well as techniques for its detection and analysis, and countermeasures to prevent web tracking.}
+      \field{eventtitle}{Logic {{Journal}} of the {{IGPL}}}
+      \field{issn}{1368-9894}
+      \field{journaltitle}{Logic Journal of the IGPL}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shorttitle}{The Web Is Watching You}
+      \field{title}{The Web Is Watching You: {{A}} Comprehensive Review of Web-Tracking Techniques and Countermeasures}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{25}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{18\bibrangedash 29}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1093/jigpal/jzw041
+      \endverb
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/UUHXYEBT/Sanchez-Rola et al. - 2017 - The web is watching you A comprehensive review of web-tracking techniques and countermeasures.pdf;/Users/basti/Zotero/storage/92ZQE6LX/8142531.html
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8142531?utm_source=chatgpt.com
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8142531?utm_source=chatgpt.com
+      \endverb
+      \keyw{Web privacy,web security,web tracking}
+    \endentry
+    \entry{sarContextualIntegritysDecision2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=205c0da39fe24b6713f021ec39850dbc}{%
+           family={Sar},
+           familyi={S\bibinitperiod},
+           given={Rath\bibnamedelima Kanha},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5a1009f7a3a7a79418db5824edd49018}{%
+           family={Al-Saggaf},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Yeslam},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6a6286bc775de4cd39f66666a08a5f2}
+      \strng{fullhash}{f6a6286bc775de4cd39f66666a08a5f2}
+      \strng{bibnamehash}{f6a6286bc775de4cd39f66666a08a5f2}
+      \strng{authorbibnamehash}{f6a6286bc775de4cd39f66666a08a5f2}
+      \strng{authornamehash}{f6a6286bc775de4cd39f66666a08a5f2}
+      \strng{authorfullhash}{f6a6286bc775de4cd39f66666a08a5f2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The findings of our experiments showed that social network sites (SNSs) such as Google Plus, Facebook, and Twitter, have the ability to acquire knowledge about their users’ movements not only within SNSs but also beyond SNS boundaries, particularly among websites that embedded SNS widgets such as Google’s Plus One button, Facebook’s Like button, and Twitter’s Tweet button. In this paper, we analysed the privacy implication of such a practice from a moral perspective by applying Helen Nissenbaum’s decision heuristic derived from her contextual integrity framework in order to answer the question of whether or not an online user’s privacy is being violated by this practice.}
+      \field{day}{1}
+      \field{issn}{1572-8439}
+      \field{journaltitle}{Ethics and Information Technology}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{Ethics Inf Technol}
+      \field{title}{Contextual Integrity’s Decision Heuristic and the Tracking by Social Network Sites}
+      \field{urlday}{30}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{volume}{16}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15\bibrangedash 26}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s10676-013-9329-y
+      \endverb
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/WGM9QXV6/Sar and Al-Saggaf - 2014 - Contextual integrity’s decision heuristic and the tracking by social network sites.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10676-013-9329-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10676-013-9329-y
+      \endverb
+      \keyw{ethics,read,tracking}
+    \endentry
+    \entry{simCombatingWebTracking2024}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dbc6bde79eebf89da204c93ba4277b52}{%
+           family={Sim},
+           familyi={S\bibinitperiod},
+           given={Kyungmin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cbb2642b242cca70d905ba4f41807ea6}{%
+           family={Heo},
+           familyi={H\bibinitperiod},
+           given={Honyeong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=768ec6cdcea772299318874bc6d6715a}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Haehyun},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{37956973f43322a42fc1e0bc26bbbe2d}
+      \strng{fullhash}{37956973f43322a42fc1e0bc26bbbe2d}
+      \strng{bibnamehash}{37956973f43322a42fc1e0bc26bbbe2d}
+      \strng{authorbibnamehash}{37956973f43322a42fc1e0bc26bbbe2d}
+      \strng{authornamehash}{37956973f43322a42fc1e0bc26bbbe2d}
+      \strng{authorfullhash}{37956973f43322a42fc1e0bc26bbbe2d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Behind everyday websites, a hidden shadow world tracks the behavior of Internet users. Web tracking analyzes online activity based on collected data and delivers content tailored to users’ interests. It gathers vast amounts of information for various purposes, ranging from sensitive personal data to seemingly minor details such as IP addresses, devices, browsing histories, settings, and preferences. While Web tracking is largely a legitimate technology, the increase in illegal user tracking, data breaches, and the unlawful sale of data has become a growing concern. As a result, the demand for technologies that can detect and prevent Web trackers is more important than ever. This paper provides an overview of Web tracking technologies, relevant research, and website measurement tools designed to identify web-based tracking. It also explores technologies for preventing Web tracking and discusses potential directions for future research.}
+      \field{issn}{1999-5903}
+      \field{issue}{10}
+      \field{journaltitle}{Future Internet}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shorttitle}{Combating {{Web Tracking}}}
+      \field{title}{Combating {{Web Tracking}}: {{Analyzing Web Tracking Technologies}} for {{User Privacy}}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{volume}{16}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{363}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/fi16100363
+      \endverb
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/W3QEPMLA/Sim et al. - 2024 - Combating Web Tracking Analyzing Web Tracking Technologies for User Privacy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1999-5903/16/10/363
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1999-5903/16/10/363
+      \endverb
+      \keyw{must-read,tracking}
+    \endentry
+    \entry{teamBotDetectionPrevent}{online}{}
+      \name{author}{1}{}{%
+        {{hash=43bf5579a687e1f67b3644d66ae4d7b1}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={IPQS},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IPQS}%
+      }
+      \strng{namehash}{43bf5579a687e1f67b3644d66ae4d7b1}
+      \strng{fullhash}{43bf5579a687e1f67b3644d66ae4d7b1}
+      \strng{bibnamehash}{43bf5579a687e1f67b3644d66ae4d7b1}
+      \strng{authorbibnamehash}{43bf5579a687e1f67b3644d66ae4d7b1}
+      \strng{authornamehash}{43bf5579a687e1f67b3644d66ae4d7b1}
+      \strng{authorfullhash}{43bf5579a687e1f67b3644d66ae4d7b1}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Bot detection technology by IPQS uses AI \& machine learning to identify bots and non-human traffic. Detect botnets, high risk behavior, and non-human traffic. Block bots with real-time filtering to prevent fraud.}
+      \field{langid}{english}
+      \field{title}{Bot {{Detection}} | {{Prevent}} and {{Block Bots}} | {{Detect Non-Human Traffic}}}
+      \field{urlday}{13}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/942NS7EG/bot-detection.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ipqualityscore.com/features/bot-detection
+      \endverb
+      \verb{url}
+      \verb https://www.ipqualityscore.com/features/bot-detection
+      \endverb
+    \endentry
+    \entry{teamHowIPLocation2023}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3f77c228d25f16cc9695ddbfb034479f}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={TraceMyIP},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Learning IP Tracking \& Security Technology}%
+      }
+      \strng{namehash}{3f77c228d25f16cc9695ddbfb034479f}
+      \strng{fullhash}{3f77c228d25f16cc9695ddbfb034479f}
+      \strng{bibnamehash}{3f77c228d25f16cc9695ddbfb034479f}
+      \strng{authorbibnamehash}{3f77c228d25f16cc9695ddbfb034479f}
+      \strng{authornamehash}{3f77c228d25f16cc9695ddbfb034479f}
+      \strng{authorfullhash}{3f77c228d25f16cc9695ddbfb034479f}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{IP location data is created through a process called IP geolocation, which involves determining the physical or geographical location of an IP address. IP addresses are unique numerical labels assigned to devices connected to a computer network, such as the Internet. They are used to identify and communicate with these...}
+      \field{day}{31}
+      \field{hour}{11}
+      \field{langid}{american}
+      \field{minute}{10}
+      \field{month}{8}
+      \field{second}{19}
+      \field{timezone}{Z}
+      \field{title}{How {{IP}} Location Data Is Created. {{Who}} Collects and Uses {{IP}} Data. - {{TraceMyIP}}}
+      \field{type}{TraceMyIP}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/94XKVKUC/how-ip-location-data-is-created-who-collects-and-uses-ip-data-2381.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tracemyip.org/learn/how-ip-location-data-is-created-who-collects-and-uses-ip-data-2381/
+      \endverb
+      \verb{url}
+      \verb https://www.tracemyip.org/learn/how-ip-location-data-is-created-who-collects-and-uses-ip-data-2381/
+      \endverb
+    \endentry
+    \entry{twetmanDataBrokersSecurity2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9d5b39eb4b0a574a8be59d117a49650c}{%
+           family={Twetman},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0698f0ae5bb3004c1ebc0555be8b60d7}{%
+           family={Bergmanis-Korats},
+           familyi={B\bibinithyphendelim K\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{477e1dd89e8acc7fd68533e88b148b7b}
+      \strng{fullhash}{477e1dd89e8acc7fd68533e88b148b7b}
+      \strng{bibnamehash}{477e1dd89e8acc7fd68533e88b148b7b}
+      \strng{authorbibnamehash}{477e1dd89e8acc7fd68533e88b148b7b}
+      \strng{authornamehash}{477e1dd89e8acc7fd68533e88b148b7b}
+      \strng{authorfullhash}{477e1dd89e8acc7fd68533e88b148b7b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Data {{Brokers}} and {{Security}}.}
+      \field{title}{Data {{Brokers}} and {{Security}}. {{Riga}}: {{NATO Strategic Communications Centre}} of {{Excellence}}.}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/basti/Zotero/storage/KFGPGLEG/StratCom NATO Strategic Communications Centre of Excellence Riga, Latvia.pdf;/Users/basti/Zotero/storage/W85JVIMP/17.html
+      \endverb
+      \verb{urlraw}
+      \verb https://stratcomcoe.org/publications/data-brokers-and-security/17
+      \endverb
+      \verb{url}
+      \verb https://stratcomcoe.org/publications/data-brokers-and-security/17
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

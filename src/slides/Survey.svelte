@@ -1,5 +1,8 @@
 <section>
+  <section><h1 class="r-fit-text">Survey</h1></section>
+
   <section>
+    <h1 class="text-left">Questions</h1>
     <ul>
       <li>Awareness of web tracking practices.</li>
       <li>Recognition of targeted advertisements.</li>
@@ -9,5 +12,8 @@
     </ul>
   </section>
 
-  <section>Results</section>
+  <section>
+    <h1 class="text-left">Results</h1>
+    blaa basdf asdfasfa adsgfa
+  </section>
 </section>
