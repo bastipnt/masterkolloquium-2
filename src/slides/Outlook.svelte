@@ -1,7 +1,7 @@
-<section>
-  <h1 class="text-left">Outlook</h1>
+<section id="outlook">
+  <h3 class="text-left">Outlook:</h3>
 
-  <ul>
+  <ul class="w-full">
     <li>Final evaluation of the survey</li>
     <li>Finish the project</li>
     <li>Finish writing</li>

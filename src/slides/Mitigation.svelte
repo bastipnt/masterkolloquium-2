@@ -1,9 +1,16 @@
 <section id="mitigation">
-  <section><h1 class="r-fit-text">Mitigation</h1></section>
+  <section>
+    <h3 class="text-left">Mitigation Strategies:</h3>
+    <ul class="w-full">
+      <li>Ad Blockers</li>
+      <li>Browsers</li>
+      <li>Other tools and behavioral changes</li>
+    </ul>
+  </section>
 
   <section id="ad-blockers">
-    <h1 class="text-left">Ad Blockers</h1>
-    <div class="grid grid-cols-3 grid-rows-3 items-center w-100 gap-8">
+    <h3 class="text-left">Ad Blockers:</h3>
+    <div class="grid grid-cols-3 grid-rows-3 justify-items-center w-full gap-8">
       <img class="w-24" src="/img/adblockers/adblock.png" alt="adblock" />
       <img class="w-24" src="/img/adblockers/adblockplus.png" alt="adblockplus" />
       <img class="w-24" src="/img/adblockers/ublockorigin.png" alt="ublockorigin" />
@@ -15,8 +22,8 @@
   </section>
 
   <section id="browsers">
-    <h1 class="text-left">Browsers</h1>
-    <div class="grid grid-cols-3 grid-rows-3 items-center w-100 gap-8">
+    <h3 class="text-left">Browsers:</h3>
+    <div class="grid grid-cols-3 grid-rows-3 justify-items-center w-full gap-8">
       <img class="w-24" src="/img/browsers/chrome.png" alt="chrome" />
       <img class="w-24" src="/img/browsers/safari.png" alt="safari" />
       <img class="w-24" src="/img/browsers/edge.png" alt="edge" />
@@ -29,8 +36,8 @@
   </section>
 
   <section id="others">
-    <h1 class="text-left">Other Tools</h1>
-    <ul>
+    <h3 class="text-left">Other Tools:</h3>
+    <ul class="w-full">
       <li>VPN Services</li>
       <li>Search Engines</li>
       <li>Canvas Blocker Add-On</li>

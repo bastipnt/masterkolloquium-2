@@ -126,35 +126,24 @@
   });
 </script>
 
-<section>
+<section id="intro">
   <section id="title-slide-1">
-    <h1 class="r-fit-text">Data Protection:</h1>
-    <h2 class="r-fit-text">How does your digital fingerprint sound</h2>
-  </section>
-
-  <section id="web-tracking">
-    <h1 class="text-left">Web Tracking</h1>
+    <h3 class="text-left">Topic:</h3>
     <ul>
-      <li>More and more websites are using trackers</li>
-      <li>Advertising companies like Google or Meta generate billions in revenue</li>
+      <li>Data Protection: How does your digital fingerprint sound</li>
+      <li>The Art of Surveillance: Mitigation of web tracking with the help of audiovisual art</li>
     </ul>
   </section>
 
-  <section id="usage">
-    <h1 class="text-left">Use</h1>
+  <section id="structure">
+    <h3 class="text-left">Structure:</h3>
     <ul>
-      <li>Insights into user behavior for website owners</li>
-      <li>Prevention of malicious online activities</li>
-      <li>Bot detection</li>
-    </ul>
-  </section>
-
-  <section id="misuse">
-    <h1 class="text-left">Misuse</h1>
-    <ul>
-      <li>Data collection without explicit consent</li>
-      <li>Manipulation concerns: Cambridge Analytica (2016)</li>
-      <li>Mass surveillance by governments, corporations, and other political actors</li>
+      <li>Recap: Web Tracking</li>
+      <li>Use and Misuse of Web Tracking</li>
+      <li>Research on Mitigation Strategies</li>
+      <li>Survey of acceptance and knowledge on Web Tracking</li>
+      <li>Project: Learning with the help of music and visuals</li>
+      <li>Outlook</li>
     </ul>
   </section>
 </section>

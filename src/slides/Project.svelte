@@ -1,8 +1,8 @@
-<section>
-  <section>
-    <h1 class="text-left">Project</h1>
-    <div class="flex justify-center">
-      <img class="w-96" src="/img/fingerprint-sound.png" alt="Project" />
-    </div>
-  </section>
+<section
+  id="project"
+  class="h-full"
+  data-background-image="/img/fingerprint-sound.png"
+  data-background-size="100vh"
+>
+  <h3 class="text-left">Project:</h3>
 </section>

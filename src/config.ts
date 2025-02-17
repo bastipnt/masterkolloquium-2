@@ -18,13 +18,7 @@ export default {
   },
   // Reveal Config
   reveal: {
-    plugins: [
-      Highlight,
-      // Markdown,
-      // MathReveal.MathJax2,
-      // MathReveal.KaTeX,
-      RevealNotes,
-    ],
+    plugins: [Highlight, RevealNotes],
     hash: true,
     controlsTutorial: false,
     center: true,
