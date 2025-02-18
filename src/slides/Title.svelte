@@ -128,14 +128,22 @@
 
 <section id="intro">
   <section id="title-slide-1">
-    <h3 class="text-left">Topic:</h3>
+    <h3 class="text-left">Web Tracking:</h3>
     <ul>
+      <li>Recap: Web Tracking</li>
+      <li>Use and Misuse of Web Tracking</li>
+      <li>Research on Mitigation Strategies</li>
+      <li>Survey of acceptance and knowledge on Web Tracking</li>
+      <li>Project: Learning with the help of music and visuals</li>
+      <li>Outlook</li>
+    </ul>
+    <!-- <ul>
       <li>Data Protection: How does your digital fingerprint sound</li>
       <li>The Art of Surveillance: Mitigation of web tracking with the help of audiovisual art</li>
-    </ul>
+    </ul> -->
   </section>
 
-  <section id="structure">
+  <!-- <section id="structure">
     <h3 class="text-left">Structure:</h3>
     <ul>
       <li>Recap: Web Tracking</li>
@@ -145,5 +153,5 @@
       <li>Project: Learning with the help of music and visuals</li>
       <li>Outlook</li>
     </ul>
-  </section>
+  </section> -->
 </section>

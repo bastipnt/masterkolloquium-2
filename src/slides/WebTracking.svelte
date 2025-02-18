@@ -1,9 +1,10 @@
 <section id="web-tracking">
   <section id="recap">
-    <h3 class="text-left">Web Tracking:</h3>
+    <h3 class="text-left">Why:</h3>
     <ul>
       <li>More and more websites are using trackers</li>
       <li>Advertising companies like Google or Meta generate billions in revenue</li>
+      <li>Uncontrolled data sharing</li>
     </ul>
   </section>
 
