@@ -129,12 +129,12 @@
 <section id="intro">
   <section id="title-slide-1">
     <h3 class="text-left">Web Tracking:</h3>
-    <ul>
-      <li>Recap: Web Tracking</li>
+    <ul class="w-full">
+      <li>Recap: Why?</li>
       <li>Use and Misuse of Web Tracking</li>
       <li>Research on Mitigation Strategies</li>
       <li>Survey of acceptance and knowledge on Web Tracking</li>
-      <li>Project: Learning with the help of music and visuals</li>
+      <li>Project</li>
       <li>Outlook</li>
     </ul>
     <!-- <ul>
