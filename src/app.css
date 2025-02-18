@@ -36,3 +36,11 @@ body {
 .reveal .slides h1 {
   text-align: left;
 }
+
+#ad-blockers,
+#browsers {
+  img,
+  p {
+    margin: 0;
+  }
+}
